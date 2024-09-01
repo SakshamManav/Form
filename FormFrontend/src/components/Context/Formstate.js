@@ -29,9 +29,7 @@ export default function Formstate(props) {
     gender: "",
   });
 
-  useEffect(() => {
-    console.log(data);
-  });
+  
   return (
     <div>
       <FormContext.Provider value={{login, setLogin, createUser, data, setData }}>
