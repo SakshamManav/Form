@@ -17,9 +17,9 @@ export default function Formstate(props) {
         address:address,
       }),
     });
-    // let result = await response.json();
-    //  console.log(result);
-    //  if(result.msg === "Saved successfully"){setLogin(true)};
+    let result = await response.json();
+     console.log(result);
+     if(result.msg === "Saved successfully"){setLogin(true)};
   }
   const [data, setData] = useState({
     name: "",
