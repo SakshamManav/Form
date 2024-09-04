@@ -19,6 +19,7 @@ router.post(
   body("gender", "gender section cannot be empty!").isLength({ min: 1 }),
   async (req, res) => {
     const result = await validationResult(req);
+    console.log("checking");
     if (result.errors.length !== 0) {
       res.status(400).json({ mag: result.errors });
     } else {
@@ -36,6 +37,7 @@ router.post(
         });
         await user.save();
         res.json({ user , msg:"Saved successfully"});
+        
       } catch (error) {
         res.status(404).json({error});
       }

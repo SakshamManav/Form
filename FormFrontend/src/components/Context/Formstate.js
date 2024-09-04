@@ -18,7 +18,7 @@ export default function Formstate(props) {
       }),
     });
     let result = await response.json();
-     console.log(result);
+     console.log(result.filter({password}));
      if(result.msg === "Saved successfully"){setLogin(true)};
   }
   const [data, setData] = useState({
