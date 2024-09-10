@@ -8,7 +8,7 @@ connectToDatabase();
 
 
 app.use(cors({
-    origin: ['https://form-7w5g-sakshammanavs-projects.vercel.app', "https://form-7w5g.vercel.app" ], // Allow requests from this origin
+    origin: ['https://form-7w5g-sakshammanavs-projects.vercel.app' ], // Allow requests from this origin
     methods: [ 'POST', ], // Allow these HTTP methods
     credentials:true,
     allowedHeaders: ['Content-Type', 'Authorization'] // Allow these headers
